@@ -6,7 +6,7 @@ const Calculator = () => {
   const [result, setResult] = useState(0);
 
   const handleClick = (ev) => {
-    setResult((prevState) => calculator(prevState, ev.target.innerText));
+    setResult((prevState) => Calculator(prevState, ev.target.innerText));
   };
   return (
     <div className={styles.calculatorWrapper}>
