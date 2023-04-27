@@ -1,0 +1,44 @@
+header {
+  padding: 0 40px 0 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.navlink {
+  text-align: center;
+  padding: 5px;
+}
+
+.verticalLine {
+  border-right: 3px solid cornflowerblue;
+}
+
+nav > ul > li a {
+  font-size: 20px;
+  font-weight: 700;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+.active {
+  color: orange;
+}

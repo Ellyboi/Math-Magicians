@@ -1,0 +1,17 @@
+.calculatorWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(184, 180, 180);
+  width: 400px;
+}
+
+.display {
+  padding: 15px;
+  text-align: right;
+  font-size: 20px;
+  color: white;
+}
+
+.row {
+  display: flex;
+}
