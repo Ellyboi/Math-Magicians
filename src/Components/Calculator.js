@@ -1,32 +1,34 @@
-export default function Calculator() {
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
+
+const Calculator = () => {
+  const buttons = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
+
+  const [result, setResult] = useState({ total: 0, next: null, operation: null });
+
+  const handleKeyPress = (clickButton) => {
+    setResult((prevState) => {
+      const calculator = calculate(prevState, clickButton.target.textContent);
+      return { ...prevState, ...calculator };
+    });
+  };
+
   return (
     <>
       <div className="calculator">
-        <p className="outputResult">0</p>
+        <p className="outputResult">
+          { result.total }
+          { result.operation }
+          { result.next }
+        </p>
         <div className="buttonContainer">
-          <button type="button" className="calcButtons">AC</button>
-          <button type="button" className="calcButtons">+/-</button>
-          <button type="button" className="calcButtons">%</button>
-          <button type="button" className="calcButtons simpleMath">/</button>
-          <button type="button" className="calcButtons">7</button>
-          <button type="button" className="calcButtons">8</button>
-          <button type="button" className="calcButtons">9</button>
-          <button type="button" className="calcButtons simpleMath">*</button>
-          <button type="button" className="calcButtons">4</button>
-          <button type="button" className="calcButtons">5</button>
-          <button type="button" className="calcButtons">6</button>
-          <button type="button" className="calcButtons simpleMath">-</button>
-          <button type="button" className="calcButtons">1</button>
-          <button type="button" className="calcButtons">2</button>
-          <button type="button" className="calcButtons">3</button>
-          <button type="button" className="calcButtons simpleMath">+</button>
-        </div>
-        <div className="ceroBotBTNContainer">
-          <button type="button" className="calcButtons">0</button>
-          <button type="button" className="calcButtons">.</button>
-          <button type="button" className="calcButtons simpleMath">=</button>
+          {buttons.map((button) => (
+            <button type="button" className="calcButtons" key={button} onClick={handleKeyPress}>{button}</button>
+          ))}
         </div>
       </div>
     </>
   );
-}
+};
+
+export default Calculator;

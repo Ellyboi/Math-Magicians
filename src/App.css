@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: rgb(153, 0, 255);
+  background-color: #af81a6;
   height: 3rem;
   margin: 0;
   padding: 0.5rem;
@@ -22,17 +22,19 @@
   height: 12rem;
 }
 
-.ceroBotBTNContainer {
-  display: grid;
-  grid-template-columns: 50% 25% 25%;
-  height: 3rem;
-}
-
 .calcButtons {
   margin: 0.1rem;
   cursor: pointer;
 }
 
-.simpleMath {
-  background-color: rgb(153, 0, 255);
+.calcButtons:nth-child(17n) {
+  grid-column: 1 / span 2;
+}
+
+.calcButtons:nth-child(4n) {
+  background-color: #e709c2;
+}
+
+.calcButtons:nth-child(19) {
+  background-color: #e709c2;
 }
