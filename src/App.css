@@ -1,0 +1,62 @@
+/* stylelint-disable-next-line block-opening-brace-space-before */
+*{
+  background-color: rgb(36, 199, 101);
+}
+
+.calculator {
+  width: 20rem;
+  margin-top: 50%;
+}
+
+.outputResult {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: grey;
+  height: 3rem;
+  margin: 0;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: 12rem;
+}
+
+.calcButtons {
+  margin: 0.1rem;
+  cursor: pointer;
+}
+
+.calcButtons:nth-child(17n) {
+  grid-column: 1 / span 2;
+}
+
+.calcButtons:nth-child(4n) {
+  background-color: #bd5806;
+}
+
+.calcButtons:nth-child(19) {
+  background-color: #bd5806;
+}
+
+.quoteContainer {
+  display: flex;
+  width: 18rem;
+  flex-direction: column;
+  border: solid 0.1rem black;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.quotes {
+  width: 100%;
+}
+
+.quoteAuthor {
+  font-weight: 900;
+}
