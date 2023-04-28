@@ -22,7 +22,7 @@ jobs:
       - name: ESLint Report
         run: npx eslint "**/*.{js,jsx}"
   stylel
-    name: Stylelint
+    name: Stylelintsssss
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
