@@ -43,6 +43,11 @@ const mathQuotes = [
   },
   {
     quote:
+      'The mathematician does not study pure mathematics because it is useful; he studies it because he delights in it and he delights in it because it is beautiful.',
+    author: 'Henri Poincare',
+  },
+  {
+    quote:
       'In mathematics, the art of asking questions is more valuable than solving problems.',
     author: 'Georg Cantor',
   },
@@ -66,8 +71,8 @@ const mathQuotes = [
   },
   {
     quote:
-      'The mathematician does not study pure mathematics because it is useful; he studies it because he delights in it and he delights in it because it is beautiful.',
-    author: 'Henri Poincare',
+      "In mathematics, you don't understand things. You just get used to them.",
+    author: 'John von Neumann',
   },
   {
     quote:
@@ -91,11 +96,6 @@ const mathQuotes = [
     quote:
       'In mathematics, the art of proposing a question must be held of higher value than solving it.',
     author: 'Georg Cantor',
-  },
-  {
-    quote:
-      "In mathematics, you don't understand things. You just get used to them.",
-    author: 'John von Neumann',
   },
 ];
 
