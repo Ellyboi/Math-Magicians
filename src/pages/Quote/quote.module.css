@@ -1,0 +1,21 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote p {
+  text-align: center;
+  font-size: 25px;
+  padding: 30px;
+}
+
+.author {
+  font-weight: 700;
+}
+
+.quoteBtn {
+  padding: 10px;
+}

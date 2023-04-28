@@ -1,0 +1,27 @@
+button {
+  flex: 1;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  background: lightgrey;
+  border: 2px solid lightgray;
+  margin: 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 1px rgba(246, 186, 108, 0.913);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.operatorBtn {
+  background: #f4b848;
+}
+
+.zeroBtn {
+  flex: 2.55;
+}
