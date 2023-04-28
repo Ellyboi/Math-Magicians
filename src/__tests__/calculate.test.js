@@ -85,4 +85,3 @@ describe('Calculate function', () => {
     expect(result.total).toBe('13');
   });
 });
- 
