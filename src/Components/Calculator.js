@@ -15,16 +15,19 @@ const Calculator = () => {
 
   return (
     <>
-      <div className="calculator">
-        <p className="outputResult">
-          { result.total }
-          { result.operation }
-          { result.next }
-        </p>
-        <div className="buttonContainer">
-          {buttons.map((button) => (
-            <button type="button" className="calcButtons" key={button} onClick={handleKeyPress}>{button}</button>
-          ))}
+      <div className="calculatorSection">
+        <h3>Lets do some math!</h3>
+        <div className="calculator">
+          <p className="outputResult">
+            { result.total }
+            { result.operation }
+            { result.next }
+          </p>
+          <div className="buttonContainer">
+            {buttons.map((button) => (
+              <button type="button" className="calcButtons" key={button} onClick={handleKeyPress}>{button}</button>
+            ))}
+          </div>
         </div>
       </div>
     </>
