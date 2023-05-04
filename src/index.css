@@ -2,9 +2,9 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-image: url(./84261.jpg);
   background-size: cover;
   color: goldenrod;
+  background-color: rgba(4, 100, 4, 0.788);
   font-size: large;
   font-family: Arial, Helvetica, sans-serif;
 }
