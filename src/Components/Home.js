@@ -7,7 +7,7 @@ const Home = () => (
     </h1>
 
     <p>
-    Math Magicians is a project that allows the users to make simple
+      Math Magicians is a project that allows the users to make simple
       calculations and read a ramdom related and funny quotes.
     </p>
 
