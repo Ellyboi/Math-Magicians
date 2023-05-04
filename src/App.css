@@ -1,18 +1,8 @@
-/* stylelint-disable-next-line block-opening-brace-space-before */
-*{
-  background-color: rgb(36, 199, 101);
-}
-
-.calculator {
-  width: 20rem;
-  margin-top: 50%;
-}
-
 .outputResult {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: grey;
+  background-color: rgb(41, 187, 36);
   height: 3rem;
   margin: 0;
   padding: 0.5rem;
@@ -37,26 +27,81 @@
 }
 
 .calcButtons:nth-child(4n) {
-  background-color: #bd5806;
+  background-color: #f5913e;
 }
 
 .calcButtons:nth-child(19) {
-  background-color: #bd5806;
+  background-color: #f5913e;
 }
 
 .quoteContainer {
   display: flex;
-  width: 18rem;
+  width: 70%;
+  margin: auto;
   flex-direction: column;
-  border: solid 0.1rem black;
+  border: solid 0.1rem red;
   margin-top: 2rem;
   padding: 1rem;
-}
-
-.quotes {
-  width: 100%;
+  font-size: 1.5rem;
 }
 
 .quoteAuthor {
   font-weight: 900;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 3rem;
+}
+
+.navItemsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navItems {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.navItems:hover {
+  transform: scale(1.1);
+}
+
+.homeContainer {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeImageCont {
+  width: 50%;
+  margin: auto;
+}
+
+.calculatorSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 3rem 0 3rem;
+}
+
+.calculator {
+  width: 35rem;
+  border: solid rgb(102, 221, 5) 0.2rem;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
